@@ -29,3 +29,20 @@ Jalankan program. Apakah terjadi perubahan? Mengapa demikian?
 Jawab:Tidak ada perubahan pada hasil output program. Program tetap menampilkan daftar nilai mahasiswa dari indeks ke-0 sampai ke-9 seperti sebelumnya.Karena pada dasarnya, kondisi i < 10 dan i < nilaiAkhir.length memiliki arti yang sama — keduanya membatasi perulangan agar berjalan sebanyak 10 kali.
 2. Apa yang dimaksud dengan kondisi: i < nilaiAkhir.length ? 
 Jawab:Kondisi i < nilaiAkhir.length digunakan di dalam perulangan for untuk mengontrol berapa kali perulangan dilakukan, yaitu sebanyak jumlah elemen yang ada di dalam array.
+3. Ubah statement pada langkah nomor 6 menjadi seperti berikut ini, sehingga program
+hanya menampilkan nilai Mahasiswa yang lulus saja (yaitu mahasiswa yang memiliki nilai
+> 70):
+for (int i = 0; i < nilaiAkhir.length; i++) {
+            if (nilaiAkhir[i] > 70) {
+                System.out.println("Mahasiswa ke-" + i + " lulus!");
+            }
+        }
+Jalankan program dan jelaskan alur program!
+Jawab: 1.Program membuat array nilaiAkhir untuk menyimpan nilai semua mahasiswa.
+       2.Nilai dimasukkan melalui perulangan pertama (for).
+       3.Setelah semua nilai tersimpan, perulangan kedua digunakan untuk memeriksa setiap nilai.
+       4.Jika nilai mahasiswa lebih dari 70, program menampilkan bahwa mahasiswa tersebut lulus.
+       5.Mahasiswa yang nilainya 70 ke bawah tidak muncul di output.
+4. Modifikasi program agar menampilkan status kelulusan semua mahasiswa berdasarkan
+nilai, yaitu dengan menampilkan status mana mahasiswa yang lulus dan tidak lulus,
+seperti ilustrasi output berikut:
