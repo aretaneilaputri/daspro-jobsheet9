@@ -27,3 +27,5 @@ for (int i = 0; i < nilaiAkhir.length; i++) {
         }
 Jalankan program. Apakah terjadi perubahan? Mengapa demikian?
 Jawab:Tidak ada perubahan pada hasil output program. Program tetap menampilkan daftar nilai mahasiswa dari indeks ke-0 sampai ke-9 seperti sebelumnya.Karena pada dasarnya, kondisi i < 10 dan i < nilaiAkhir.length memiliki arti yang sama — keduanya membatasi perulangan agar berjalan sebanyak 10 kali.
+2. Apa yang dimaksud dengan kondisi: i < nilaiAkhir.length ? 
+Jawab:Kondisi i < nilaiAkhir.length digunakan di dalam perulangan for untuk mengontrol berapa kali perulangan dilakukan, yaitu sebanyak jumlah elemen yang ada di dalam array.
