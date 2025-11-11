@@ -15,4 +15,7 @@ Jawab:Ketika program dijalankan maka hasilnya adalah: 5
                                                       -7
                                                       17
 Artinya semua nilai yang tersimpan di dalam array bil ditampilkan satu per satu secara berurutan. Jadi statement ini adalah perulangan (looping) yang digunakan untuk menampilkan isi array tanpa menulis System.out.println() berkali-kali.
+4. Jika kondisi pada statement for-loop di atas diubah menjadi: i <= 4, apa keluaran
+dari program? Mengapa demikian?
+Jawab: Jika kondisi perulangan diubah menjadi i <= 4, maka program akan error dengan pesan“ArrayIndexOutOfBoundsException: 4”, karena array bil hanya memiliki indeks dari 0 sampai 3.Kesalahan ini terjadi karena Java tidak mengizinkan kita mengakses elemen di luar batas array. Jadi saat i bernilai 4, program mencoba membaca elemen ke-5 yang sebenarnya tidak ada.Maka solusi yang benar adalah menggunakan kondisi i < bil.length agar perulangan hanya berjalan sampai indeks terakhir yang valid.
 
