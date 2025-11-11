@@ -46,3 +46,7 @@ Jawab: 1.Program membuat array nilaiAkhir untuk menyimpan nilai semua mahasiswa.
 4. Modifikasi program agar menampilkan status kelulusan semua mahasiswa berdasarkan
 nilai, yaitu dengan menampilkan status mana mahasiswa yang lulus dan tidak lulus,
 seperti ilustrasi output berikut:
+
+Pertanyaan Percobaan 4:
+1. Jelaskan maksud dari statement break; pada baris ke-10 kode program percobaan 4 di atas.
+Jawab: Statement break; pada baris ke-10 digunakan untuk menghentikan perulangan for secara langsung ketika nilai yang dicari (key) sudah ditemukan di dalam array.Tanpa break;, program akan tetap melanjutkan loop sampai akhir, meskipun hasilnya sudah ketemu.Dengan adanya break;, program akan keluar dari perulangan lebih cepat sehingga lebih efisien.
