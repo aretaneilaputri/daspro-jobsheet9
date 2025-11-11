@@ -19,3 +19,11 @@ Artinya semua nilai yang tersimpan di dalam array bil ditampilkan satu per satu 
 dari program? Mengapa demikian?
 Jawab: Jika kondisi perulangan diubah menjadi i <= 4, maka program akan error dengan pesan“ArrayIndexOutOfBoundsException: 4”, karena array bil hanya memiliki indeks dari 0 sampai 3.Kesalahan ini terjadi karena Java tidak mengizinkan kita mengakses elemen di luar batas array. Jadi saat i bernilai 4, program mencoba membaca elemen ke-5 yang sebenarnya tidak ada.Maka solusi yang benar adalah menggunakan kondisi i < bil.length agar perulangan hanya berjalan sampai indeks terakhir yang valid.
 
+Pertanyaan Percobaan 2:
+1. Ubah statement pada langkah nomor 5 menjadi seperti berikut ini:
+for (int i = 0; i < nilaiAkhir.length; i++) {
+            System.out.print("Masukkan nilai akhir ke-" + i + ": ");
+            nilaiAkhir[i] = sc.nextInt();
+        }
+Jalankan program. Apakah terjadi perubahan? Mengapa demikian?
+Jawab:Tidak ada perubahan pada hasil output program. Program tetap menampilkan daftar nilai mahasiswa dari indeks ke-0 sampai ke-9 seperti sebelumnya.Karena pada dasarnya, kondisi i < 10 dan i < nilaiAkhir.length memiliki arti yang sama — keduanya membatasi perulangan agar berjalan sebanyak 10 kali.
